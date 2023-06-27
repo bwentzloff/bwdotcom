@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/bwdotcom',
   integrations: [
     starlight({
-      title: 'My Docs',
+      title: 'Pages',
       social: {
         github: 'https://github.com/withastro/starlight',
       },
