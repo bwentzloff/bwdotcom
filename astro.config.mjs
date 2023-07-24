@@ -13,16 +13,16 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: 'Guides',
+          label: 'Bioinformatics',
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: 'Example Guide', link: '/guides/example/' },
+            { label: 'GNU parallel', link: '/parallel' },
           ],
         },
-        {
+        /* {
           label: 'Reference',
           autogenerate: { directory: 'reference' },
-        },
+        }, */
       ],
     }),
   ],
