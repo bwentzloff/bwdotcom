@@ -3,8 +3,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://bwentzloff.github.io',
-  base: '/bwdotcom',
+  site: 'https://giffordlakelabs.com',
+  base: '/',
   integrations: [
     starlight({
       title: 'Pages',
