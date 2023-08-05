@@ -7,16 +7,16 @@ export default defineConfig({
   base: '/',
   integrations: [
     starlight({
-      title: 'Pages',
+      title: 'BWdotcom',
       social: {
-        github: 'https://github.com/withastro/starlight',
+        github: 'https://github.com/bwentzloff',
       },
       sidebar: [
         {
           label: 'Bioinformatics',
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: 'GNU parallel', link: '/parallel' },
+            { label: 'GNU parallel', link: '/bioinformatics/parallel' },
           ],
         },
         /* {
