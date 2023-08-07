@@ -16,7 +16,7 @@ export default defineConfig({
           label: 'Bioinformatics',
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: 'GNU parallel', link: '/bioinformatics/parallel' },
+            
           ],
         },
         /* {
