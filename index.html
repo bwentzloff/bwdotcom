@@ -7,105 +7,80 @@
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
     <style>
       :root {
-        --primary: #d54d4d;
-        --primary-hover: #b93d3d;
-        --primary-focus: #d54d4d33;
-        --primary-inverse: #fff;
-        --background-color: #d6b97b;
-        --muted-border-color: #bfa76a;
-        --color: #3a2c13;      /* Main text color: dark brown */
-        --h1-color: #a13b3b;   /* Header color: deep muted red */
-        --h2-color: #a13b3b;
-        --h3-color: #a13b3b;
-        --h4-color: #a13b3b;
-        --h5-color: #a13b3b;
-        --h6-color: #a13b3b;
-      }
-      body {
-        background-color: var(--background-color) !important;
-        color: var(--color) !important;
-      }
-      p, .primary {
-        color: var(--color) !important;
-      }
-      h1, h2, h3, h4, h5, h6 {
-        color: var(--h1-color) !important;
-      }
-      a, a:visited {
-        color: var(--primary);
-      }
-      a:hover, a:focus {
-        color: var(--primary-hover);
-      }
-      header, aside, main {
-        background: transparent !important;
-      }
-      /* Layout container for aside + main */
-      .layout {
-        display: grid;
-        grid-template-columns: 220px 1fr;
-        gap: 2rem;
-        padding: 2rem;
-      }
-
-      /* Sticky top header */
-      header {
-        position: sticky;
-        top: 0;
-        z-index: 999;
-        padding: 1rem 2rem;
-        border-bottom: 1px solid var(--muted-border-color);
-        background-color: var(--background-color);
-      }
-
-      /* Sidebar nav */
-      aside {
-        position: sticky;
-        top: 4.5rem;
-        align-self: start;
-        height: max-content;
-      }
-
-      nav ul {
-        list-style: none;
-        padding-left: 0;
-      }
-
-      nav li {
-        margin: 0.5em 0;
-      }
-
-      /* Main content */
-      main {
-        max-width: 1000px;
-      }
-
-	  .corner-img {
-			position: sticky;
-			right: 0;
-			bottom: 0;
-			width: 200px;
-			height: 200px;
-			z-index: 1000;
-			pointer-events: none; /* Optional: lets clicks pass through */
-		}
-
-      /* Responsive behavior */
-      @media (max-width: 768px) {
-        .layout {
-          display: block;
-          padding: 1rem 2rem;
-        }
-
-        aside {
-          position: static;
-          margin-bottom: 2rem;
-        }
-
-        main {
-          padding: 0;
-        }
-      }
+  --primary: #d54d4d;
+  --primary-hover: #b93d3d;
+  --primary-focus: #d54d4d33;
+  --primary-inverse: #fff;
+  --background-color: #f8fafb; /* light terminal bg */
+  --muted-border-color: #d6b97b;
+  --color: #222; /* dark text for contrast */
+  --h1-color: #d54d4d;
+  --h2-color: #d54d4d;
+  --h3-color: #d54d4d;
+  --h4-color: #d54d4d;
+  --h5-color: #d54d4d;
+  --h6-color: #d54d4d;
+  --terminal-header-bg: #eaeaea;
+  --terminal-border: #bfa76a;
+  --terminal-shadow: 0 2px 16px 0 rgba(0,0,0,0.04);
+  --terminal-font: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+}
+body {
+  background-color: var(--background-color) !important;
+  color: var(--color) !important;
+  font-family: var(--terminal-font);
+}
+header {
+  background: var(--terminal-header-bg) !important;
+  border-bottom: 2px solid var(--terminal-border);
+  font-family: var(--terminal-font);
+  box-shadow: var(--terminal-shadow);
+}
+.layout {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+main {
+  background: #fff;
+  border: 2px solid var(--terminal-border);
+  border-radius: 8px;
+  box-shadow: var(--terminal-shadow);
+  padding: 2rem;
+  max-width: 900px;
+  width: 100%;
+  font-family: var(--terminal-font);
+}
+aside {
+  display: none; /* Hide sidebar for terminal look */
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--h1-color) !important;
+  font-family: var(--terminal-font);
+}
+a, a:visited {
+  color: var(--primary);
+  text-decoration: underline dotted;
+}
+a:hover, a:focus {
+  color: var(--primary-hover);
+}
+.corner-img {
+  display: none; /* Hide image for terminal look */
+}
+p, .primary {
+  color: var(--color) !important;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .layout {
+    margin-top: 1rem;
+    padding: 0;
+  }
+  main {
+    padding: 1rem;
+  }
+}
     </style>
   </head>
 
@@ -137,7 +112,7 @@
         <h1>Hello 👋</h1>
 		<p>I'm Brian Wentzloff, a freelance developer and founder of <a href="https://giffordlakelabs.com">Gifford Lake Labs</a> and <a href="https://altfantasysports.com">AltFantasy Sports</a>. I specialize in solving weird and interesting problems with innovative and efficient solutions.</p>
 
-		<h2>👩‍💻 What I Do</h2>
+		<h2>What I Do</h2>
 		<p>🧪 Scientific Computing, Bioinformatics, Data Science, and Rugged Computing:<br />
 		I am deeply passionate about using technology to support research and solve complex computational problems.</p>
 
