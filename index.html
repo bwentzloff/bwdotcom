@@ -6,6 +6,40 @@
     <title>Brian Wentzloff dot com</title>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
     <style>
+      :root {
+        --primary: #d54d4d;
+        --primary-hover: #b93d3d;
+        --primary-focus: #d54d4d33;
+        --primary-inverse: #fff;
+        --background-color: #d6b97b;
+        --muted-border-color: #bfa76a;
+        --color: #3a2c13;      /* Main text color: dark brown */
+        --h1-color: #a13b3b;   /* Header color: deep muted red */
+        --h2-color: #a13b3b;
+        --h3-color: #a13b3b;
+        --h4-color: #a13b3b;
+        --h5-color: #a13b3b;
+        --h6-color: #a13b3b;
+      }
+      body {
+        background-color: var(--background-color) !important;
+        color: var(--color) !important;
+      }
+      p, .primary {
+        color: var(--color) !important;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        color: var(--h1-color) !important;
+      }
+      a, a:visited {
+        color: var(--primary);
+      }
+      a:hover, a:focus {
+        color: var(--primary-hover);
+      }
+      header, aside, main {
+        background: transparent !important;
+      }
       /* Layout container for aside + main */
       .layout {
         display: grid;
@@ -80,7 +114,7 @@
     <header>
       <nav class="container-fluid">
         <ul>
-          <li><strong>BW.com</strong></li>
+          <li><strong class="primary">BW.com</strong></li>
         </ul>
         <ul>
           <li><a href="projects.html">Projects</a></li>
