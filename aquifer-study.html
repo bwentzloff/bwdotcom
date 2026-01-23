@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brian Wentzloff dot com</title>
+    <title>Blog Post - Brian Wentzloff dot com</title>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
     <style>
       :root {
@@ -72,6 +72,9 @@ p, .primary {
   color: var(--color) !important;
   line-height: 1.6;
 }
+article {
+  background: rgba(255, 255, 255, 0.6); /* semi-transparent white */
+}
 @media (max-width: 768px) {
   .layout {
     margin-top: 1rem;
@@ -92,6 +95,7 @@ p, .primary {
           <li><strong class="primary"><a href="/">BW.com</a></strong></li>
         </ul>
         <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="https://github.com/bwentzloff">GitHub</a></li>
         </ul>
@@ -101,24 +105,29 @@ p, .primary {
     <div class="layout">
 
       <aside>
-        <!-- <nav>
-          <ul>
+        <nav>
+         <!--  <ul>
             <li><strong>Navigation</strong></li>
-            <li><a href="#intro">Introduction</a></li>
-            <li><a href="#install">Installation</a></li>
-            <li><a href="#usage">Usage</a></li>
-            <li><a href="#examples">Examples</a></li>
-          </ul>
-        </nav> -->
+            <li><a href="#title">Post Title</a></li>
+            <li><a href="#content">Content</a></li>
+          </ul> -->
+        </nav>
       </aside>
 
       <main>
-        <ul>
-          <li><a href="edge-network-01.html">Building a Home Edge Network</a></li>
-          <li><a href="altfantasy-sports.html">AltFantasy Sports</a></li>
-          <li><a href="aquifer-study.html">Aquifer-Scale Groundwater Storage Anomalies from GRACE (2002–2025): Random-Forest Downscaling with Cluster-Based Well-log Validation</a></li>
-        </ul>
-
+        <article>
+          <h1 id="title">Aquifer-Scale Groundwater Storage Anomalies from GRACE (2002–2025): Random-Forest Downscaling with Cluster-Based Well-log Validation</h1>
+          <p><small>Published on <time datetime="">Jan 23 2026</time></small></p>
+          
+          <div id="content">
+            <p>I assisted on an aquifer study at the University of Memphis in 2025. My role was to build the dashboard associated with this study:</p>
+            <p><em>Aquifer-Scale Groundwater Storage Anomalies from GRACE (2002–2025): Random-Forest Downscaling with Cluster-Based Well-log Validation</em><br />By George Williford, Brian Wentzloff, and Youngsang Kwon</p>
+            <p>The study developed a random-forest model to downscale GRACE satellite data to aquifer scales, validated with well-log data clustered by hydrogeologic similarity. The dashboard allows exploration of spatial maps and time series for aquifer storage anomalies.</p>
+            <p>The dashboard is hosted on ArcGIS Online and can be accessed here:</p>
+            <p><a href="https://cpgis.maps.arcgis.com/apps/dashboards/80bada77384e4bb2bdec3428c3683496">https://cpgis.maps.arcgis.com/apps/dashboards/80bada77384e4bb2bdec3428c3683496</a></p>
+            <p>It features interactive maps and time series visualizations, allowing users to explore groundwater storage anomalies across different aquifers and time periods.</p>
+          </div>
+        </article>
       </main>
 
     </div>
