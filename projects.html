@@ -72,6 +72,33 @@ p, .primary {
   color: var(--color) !important;
   line-height: 1.6;
 }
+.project-card {
+  display: block;
+  background: #fff;
+  border: 2px solid var(--terminal-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--terminal-shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+  text-decoration: none;
+}
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--h3-color) !important;
+}
+.project-card p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: var(--color) !important;
+}
 @media (max-width: 768px) {
   .layout {
     margin-top: 1rem;
@@ -79,6 +106,10 @@ p, .primary {
   }
   main {
     padding: 1rem;
+  }
+  .project-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
   }
 }
     </style>
@@ -113,11 +144,20 @@ p, .primary {
       </aside>
 
       <main>
-        <ul>
-          <li><a href="edge-network-01.html">Building a Home Edge Network</a></li>
-          <li><a href="altfantasy-sports.html">AltFantasy Sports</a></li>
-          <li><a href="aquifer-study.html">Aquifer-Scale Groundwater Storage Anomalies from GRACE (2002–2025): Random-Forest Downscaling with Cluster-Based Well-log Validation</a></li>
-        </ul>
+        <a href="/edge-network-01.html" class="project-card">
+          <h3>Building a Home Edge Network</h3>
+          <p>A distributed computing environment built from repurposed hardware including old Optiplexes, Raspberry Pis, and Mac Minis. Currently running media servers, NAS, Ollama AI server, and more. Future plans include low-power HPC, multiple AI models, Kubernetes orchestration, and home automation.</p>
+        </a>
+
+        <a href="/altfantasy-sports.html" class="project-card">
+          <h3>AltFantasy Sports</h3>
+          <p>A fantasy sports platform for alternative leagues not supported by major sites. Started in 2019 for the Alliance of American Football, now supports spring gridiron, indoor football, CFL, lacrosse, women's basketball, and more. Features season-long and daily fantasy games with a mobile app launching in 2026.</p>
+        </a>
+
+        <a href="/aquifer-study.html" class="project-card">
+          <h3>Aquifer-Scale Groundwater Storage Anomalies from GRACE</h3>
+          <p>An interactive ArcGIS dashboard for exploring groundwater storage anomalies from 2002–2025. Built as part of a University of Memphis research project that uses random-forest modeling to downscale GRACE satellite data to aquifer scales, validated with well-log data clustered by hydrogeologic similarity.</p>
+        </a>
 
       </main>
 
