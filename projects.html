@@ -99,6 +99,15 @@ p, .primary {
   font-size: 0.95rem;
   color: var(--color) !important;
 }
+.project-card .cta {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: bold;
+  color: var(--primary) !important;
+}
+.project-card:hover .cta {
+  color: var(--primary-hover) !important;
+}
 @media (max-width: 768px) {
   .layout {
     margin-top: 1rem;
@@ -147,16 +156,19 @@ p, .primary {
         <a href="/edge-network-01.html" class="project-card">
           <h3>Building a Home Edge Network</h3>
           <p>A distributed computing environment built from repurposed hardware including old Optiplexes, Raspberry Pis, and Mac Minis. Currently running media servers, NAS, Ollama AI server, and more. Future plans include low-power HPC, multiple AI models, Kubernetes orchestration, and home automation.</p>
+          <span class="cta">Read more about this project →</span>
         </a>
 
         <a href="/altfantasy-sports.html" class="project-card">
           <h3>AltFantasy Sports</h3>
           <p>A fantasy sports platform for alternative leagues not supported by major sites. Started in 2019 for the Alliance of American Football, now supports spring gridiron, indoor football, CFL, lacrosse, women's basketball, and more. Features season-long and daily fantasy games with a mobile app launching in 2026.</p>
+          <span class="cta">Read more about this project →</span>
         </a>
 
         <a href="/aquifer-study.html" class="project-card">
           <h3>Aquifer-Scale Groundwater Storage Anomalies from GRACE</h3>
           <p>An interactive ArcGIS dashboard for exploring groundwater storage anomalies from 2002–2025. Built as part of a University of Memphis research project that uses random-forest modeling to downscale GRACE satellite data to aquifer scales, validated with well-log data clustered by hydrogeologic similarity.</p>
+          <span class="cta">Read more about this project →</span>
         </a>
 
       </main>
