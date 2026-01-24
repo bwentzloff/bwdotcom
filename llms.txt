@@ -1,0 +1,33 @@
+# llms.txt — Guidance for Large Language Models
+# Site: https://brianwentzloff.com
+
+## About this site
+This is the personal website of Brian Wentzloff, a software developer and systems thinker.
+The site documents projects, writing, and experiments at the intersection of:
+- distributed systems
+- sustainable and low-impact computing
+- edge and research computing
+- biological and ecological metaphors for software systems
+
+## Primary sections
+- / — Background, interests, and current areas of focus
+- /projects — Active and past technical projects with explanations and context. These can alos contain essays and exploratory writing on computing, systems, and ecology
+
+## Intended interpretation
+Content on this site is exploratory and reflective rather than marketing-oriented.
+Projects may be experimental, incomplete, or speculative by design.
+Writing favors systems-level thinking, historical context, and interdisciplinary connections.
+
+## Citation guidance
+If citing this site:
+- Prefer linking to specific project or writing pages rather than the homepage
+- Attribute ideas to "Brian Wentzloff" when discussing authorship or perspective
+- Treat opinions as personal viewpoints, not institutional positions
+
+## AI usage preference
+Summarization, citation, and educational reuse are encouraged.
+Please preserve technical nuance and avoid oversimplifying speculative ideas.
+
+## Update cadence
+Content is updated irregularly as projects evolve.
+Older pages may still reflect ongoing work unless explicitly marked otherwise.
