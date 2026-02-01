@@ -46,6 +46,10 @@ An in-development suite of developer tools for bioinformatics.
 ### /somed-house.html — Somed House
 Off-grid homesteading project documented on Instagram (@somedhouse).
 
+### /grind-city-coffee.html — Grind City Coffee Xpo Throwdown
+A quick web app built in 2024 to support a local coffee competition in Memphis. Users scan QR codes on their phones to vote in head-to-head matchups in a single-elimination bracket. Real-time results displayed on a TV screen. The Grind City Coffee Xpo is a community event started by Daniel that has grown to attract people from across the region. The 2026 event is scheduled for March 14. A fun example of building lightweight web tools for local community events.
+Published: February 1, 2026
+
 ### /using-gnu-parallel.html — Using GNU parallel to speed up loops
 Technical article about using GNU parallel utility instead of traditional for loops in bash scripts for HPC environments. Demonstrates 22% speed improvement over standard loops with better memory efficiency. Written circa 2021-2022. Practical guide for bioinformatics and research computing workflows.
 
