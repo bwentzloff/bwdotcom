@@ -41,7 +41,8 @@ Updated: January 26, 2026
 A VSCode extension that uses AI (ChatGPT) to automatically generate Slurm parameters for HPC bash scripts. Analyzes bash scripts and predicts optimal Slurm parameters like memory, time, and CPUs. Saves time and ensures efficient resource allocation on HPC clusters. Open source project available on GitHub.
 
 ### /swatch.html — Swatch
-An in-development suite of developer tools for bioinformatics.
+An in-development suite of developer tools for bioinformatics pipelines and Slurm notifications. Designed to streamline HPC workflow management and provide better visibility into computational jobs running on high-performance computing clusters. Part of an ecosystem of tools for research computing and bioinformatics workflows.
+Published: February 19, 2026
 
 ### /somed-house.html — Somed House
 Off-grid homesteading project documented on Instagram (@somedhouse).
