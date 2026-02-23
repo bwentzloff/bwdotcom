@@ -165,7 +165,7 @@ code {
   }
 }
 
-main-content {
+#main-content {
     position: absolute;
     top: -30px;
 }
