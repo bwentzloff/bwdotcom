@@ -15,6 +15,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="SmartSlurm - A VSCode extension that uses AI to automatically generate optimal Slurm parameters for HPC bash scripts.">
     <title>SmartSlurm - Brian Wentzloff dot com</title>
+    <style>
+      /* Critical CSS - inline to prevent layout shift */
+      :root{--primary:#d54d4d;--primary-hover:#b93d3d;--background-color:#f8fafb;--color:#222;--h1-color:#d54d4d;--terminal-header-bg:#eaeaea;--terminal-border:#bfa76a;--terminal-shadow:0 2px 16px 0 rgba(0,0,0,0.04);--terminal-font:'Fira Mono','Consolas','Menlo','Monaco',monospace}
+      body{background-color:var(--background-color)!important;color:var(--color)!important;font-family:var(--terminal-font);margin:0}
+      header{background:var(--terminal-header-bg)!important;border-bottom:2px solid var(--terminal-border);box-shadow:var(--terminal-shadow)}
+      .layout{display:flex;justify-content:center;margin-top:2rem}
+      main{background:#fff;border:2px solid var(--terminal-border);border-radius:8px;box-shadow:var(--terminal-shadow);padding:2rem;max-width:900px;width:100%}
+      article{background:rgba(255,255,255,0.6)}
+      .skip-link{position:absolute;top:-40px;left:0;background:var(--primary);color:#fff;padding:8px;text-decoration:none;z-index:100}
+      .skip-link:focus{top:0}
+    </style>
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css" media="print" onload="this.media='all'">
