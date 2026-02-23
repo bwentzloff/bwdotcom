@@ -20,7 +20,10 @@
       :root{--primary:#d54d4d;--primary-hover:#b93d3d;--background-color:#f8fafb;--color:#222;--h1-color:#d54d4d;--terminal-header-bg:#eaeaea;--terminal-border:#bfa76a;--terminal-shadow:0 2px 16px 0 rgba(0,0,0,0.04);--terminal-font:'Fira Mono','Consolas','Menlo','Monaco',monospace}
       body{background-color:var(--background-color)!important;color:var(--color)!important;font-family:var(--terminal-font);margin:0}
       header{background:var(--terminal-header-bg)!important;border-bottom:2px solid var(--terminal-border);box-shadow:var(--terminal-shadow)}
-      .layout{display:flex;justify-content:center;margin-top:2rem}
+      header nav ul{list-style:none;margin:0;padding:0}
+      img{display:block;max-width:100%;height:auto}
+      .layout{display:flex;justify-content:center;margin-top:2rem;gap:2rem}
+      aside{display:none;min-width:200px}
       main{background:#fff;border:2px solid var(--terminal-border);border-radius:8px;box-shadow:var(--terminal-shadow);padding:2rem;max-width:900px;width:100%}
       article{background:rgba(255,255,255,0.6)}
       .skip-link{position:absolute;top:-40px;left:0;background:var(--primary);color:#fff;padding:8px;text-decoration:none;z-index:100}
@@ -43,7 +46,7 @@
     <header>
       <nav class="container-fluid" aria-label="Main navigation">
         <ul>
-          <li><strong class="primary"><a href="/"><img width="100" src="/img/giffordlakelabslogo-black.png" alt="Gifford Lake Labs logo - Home"></a></strong></li>
+          <li><strong class="primary"><a href="/"><img width="100" height="57" src="/img/giffordlakelabslogo-black.png" alt="Gifford Lake Labs logo - Home"></a></strong></li>
         </ul>
         <ul>
           <li><a href="index.html">Home</a></li>
