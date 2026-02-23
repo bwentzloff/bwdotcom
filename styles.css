@@ -164,3 +164,8 @@ code {
     margin-bottom: 1rem;
   }
 }
+
+main-content {
+    position: absolute;
+    top: -30px;
+}
