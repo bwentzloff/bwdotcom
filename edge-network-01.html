@@ -13,7 +13,8 @@
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Post - Brian Wentzloff dot com</title>
+    <meta name="description" content="Building a home edge network for distributed computing using repurposed hardware including Optiplexes, Raspberry Pis, and Mac Minis.">
+    <title>Home Edge Network - Brian Wentzloff dot com</title>
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
@@ -22,15 +23,17 @@
 
   <body>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
-      <nav class="container-fluid">
+      <nav class="container-fluid" aria-label="Main navigation">
         <ul>
-          <li><strong class="primary"><a href="/"><img width="100" src="/img/giffordlakelabslogo-black.png"></a></strong></li>
+          <li><strong class="primary"><a href="/"><img width="100" src="/img/giffordlakelabslogo-black.png" alt="Gifford Lake Labs logo - Home"></a></strong></li>
         </ul>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="https://github.com/bwentzloff">GitHub</a></li>
+          <li><a href="https://github.com/bwentzloff" rel="noopener noreferrer" target="_blank" aria-label="GitHub (opens in new tab)">GitHub</a></li>
         </ul>
       </nav>
     </header>
@@ -47,10 +50,10 @@
         </nav>
       </aside>
 
-      <main>
+      <main id="main-content">
         <article>
           <h1 id="title">My plan for a Franken-network: distributed computing on the edge</h1>
-          <p><small>Published on <time datetime="">Sep 23 2025</time></small></p>
+          <p><small>Published on <time datetime="2025-09-23">Sep 23 2025</time></small></p>
           
           <div id="content">
             <p>I have this idea for a home network that I'm going to be working on indefinitely. The idea is that I have a bunch of old Optiplexes, Raspberry Pis, even an old Mac Mini just laying around in closets that have either been abandoned or replaced. I want to bring them back to life and create a distributed computing environment on my home network. The idea will be to get as much distributed compute as I can get with spending as little money as possible. I'm going to start with just putting one network service on each machine, but eventually the setup will have Kubernetes supported everywhere so that some management service can deploy services to the machines they are best suited. Also, since I'm recycling old machines (even planning on some running on solar), I can assume boxes' status will be inconsistent. The Kubernetes controller could shuffle services around when a machine dies or when new ones are added to the network.</p>

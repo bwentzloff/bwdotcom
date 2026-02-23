@@ -13,6 +13,7 @@
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SmartSlurm - A VSCode extension that uses AI to automatically generate optimal Slurm parameters for HPC bash scripts.">
     <title>SmartSlurm - Brian Wentzloff dot com</title>
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
@@ -22,15 +23,17 @@
 
   <body>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
-      <nav class="container-fluid">
+      <nav class="container-fluid" aria-label="Main navigation">
         <ul>
-          <li><strong class="primary"><a href="/"><img width="100" src="/img/giffordlakelabslogo-black.png"></a></strong></li>
+          <li><strong class="primary"><a href="/"><img width="100" src="/img/giffordlakelabslogo-black.png" alt="Gifford Lake Labs logo - Home"></a></strong></li>
         </ul>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="https://github.com/bwentzloff">GitHub</a></li>
+          <li><a href="https://github.com/bwentzloff" rel="noopener noreferrer" target="_blank" aria-label="GitHub (opens in new tab)">GitHub</a></li>
         </ul>
       </nav>
     </header>
@@ -47,12 +50,12 @@
         </nav>
       </aside>
 
-      <main>
+      <main id="main-content">
         <article>
           <h1 id="title">SmartSlurm VSCode Extension</h1>
           
           <div id="content">
-			<p><small>Published on <time datetime="">Jan 27 2026</time></small></p>
+			<p><small>Published on <time datetime="2026-01-27">Jan 27 2026</time></small></p>
 			<p><small>But I actually made this thing back in like late '24 or early '25, I think. And I haven't touched it since then and honestly I think most of the code and this text was LLM generated back in the early days of ChatGPT. Use at your own risk.</small></p>
             <p>Automate the generation of Slurm parameters for your HPC bash scripts using AI! This VSCode extension analyzes your bash scripts and predicts optimal Slurm parameters such as memory, time, and CPUs. Save time, avoid guesswork, and ensure efficient resource allocation.</p>
             
@@ -62,7 +65,7 @@
 #SBATCH --mem=&lt;memory&gt;
 #SBATCH --cpus-per-task=&lt;cpus&gt;</code></pre>
             
-            <p>Check out more details here: <a href="https://github.com/bwentzloff/smartSlurm">https://github.com/bwentzloff/smartSlurm</a></p>
+            <p>Check out more details here: <a href="https://github.com/bwentzloff/smartSlurm" rel="noopener noreferrer" target="_blank">https://github.com/bwentzloff/smartSlurm</a></p>
           </div>
         </article>
       </main>

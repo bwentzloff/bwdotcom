@@ -13,7 +13,8 @@
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brian Wentzloff dot com</title>
+    <meta name="description" content="Projects by Brian Wentzloff including AltFantasy Sports, home edge network computing, groundwater research, SmartSlurm HPC tools, and more.">
+    <title>Projects - Brian Wentzloff dot com</title>
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
@@ -22,14 +23,16 @@
 
   <body>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
-      <nav class="container-fluid">
+      <nav class="container-fluid" aria-label="Main navigation">
         <ul>
-          <li><strong class="primary"><a href="/"><img width="100" src="/img/giffordlakelabslogo-black.png"></a></strong></li>
+          <li><strong class="primary"><a href="/"><img width="100" src="/img/giffordlakelabslogo-black.png" alt="Gifford Lake Labs logo - Home"></a></strong></li>
         </ul>
         <ul>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="https://github.com/bwentzloff">GitHub</a></li>
+          <li><a href="https://github.com/bwentzloff" rel="noopener noreferrer" target="_blank" aria-label="GitHub (opens in new tab)">GitHub</a></li>
         </ul>
       </nav>
     </header>
@@ -48,7 +51,8 @@
         </nav> -->
       </aside>
 
-      <main>
+      <main id="main-content">
+        <h1>Projects</h1>
         <a href="/edge-network-01.html" class="project-card">
           <h3>Building a Home Edge Network</h3>
           <p>A distributed computing environment built from repurposed hardware including old Optiplexes, Raspberry Pis, and Mac Minis. Currently running media servers, NAS, Ollama AI server, and more. Future plans include low-power HPC, multiple AI models, Kubernetes orchestration, and home automation.</p>

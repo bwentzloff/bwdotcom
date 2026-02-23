@@ -18,6 +18,21 @@
   --terminal-font: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 body {
   background-color: var(--background-color) !important;
   color: var(--color) !important;

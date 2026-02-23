@@ -13,7 +13,8 @@
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Post - Brian Wentzloff dot com</title>
+    <meta name="description" content="Auxlee - An open source DAW plug-in for seamless remote music collaboration with automatic file transfer between collaborators.">
+    <title>Auxlee - Brian Wentzloff dot com</title>
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
@@ -25,14 +26,16 @@
 
   <body>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
-      <nav class="container-fluid">
+      <nav class="container-fluid" aria-label="Main navigation">
         <ul>
-          <li><strong class="primary"><a href="/"><img width="100" src="/img/giffordlakelabslogo-black.png"></a></strong></li>
+          <li><strong class="primary"><a href="/"><img width="100" src="/img/giffordlakelabslogo-black.png" alt="Gifford Lake Labs logo - Home"></a></strong></li>
         </ul>
         <ul>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="https://github.com/bwentzloff">GitHub</a></li>
+          <li><a href="https://github.com/bwentzloff" rel="noopener noreferrer" target="_blank" aria-label="GitHub (opens in new tab)">GitHub</a></li>
         </ul>
       </nav>
     </header>
@@ -49,14 +52,14 @@
         </nav>
       </aside>
 
-      <main>
+      <main id="main-content">
         <article>
           <h1 id="title">Auxlee: Open Source Remote Music Collaboration</h1>
-          <p><small>Published on <time datetime="">Jan 24 2026</time></small></p>
-          <p><small>Updated on <time datetime="">Jan 26 2026</time></small></p>
+          <p><small>Published on <time datetime="2026-01-24">Jan 24 2026</time></small></p>
+          <p><small>Updated on <time datetime="2026-01-26">Jan 26 2026</time></small></p>
           
           <div id="content">
-            <p>I started <a href="https://auxlee.com">Auxlee</a> a long time ago with the idea of making remote music collaboration actually work. If you've ever tried to collaborate on a song with someone who isn't in the same room as you, you know the pain. You send stems back and forth, they don't line up, you have conflicted copies everywhere, someone's using Logic and someone else is on Ableton, and it's just a mess. I wanted to fix that.</p>
+            <p>I started <a href="https://auxlee.com" rel="noopener noreferrer" target="_blank">Auxlee</a> a long time ago with the idea of making remote music collaboration actually work. If you've ever tried to collaborate on a song with someone who isn't in the same room as you, you know the pain. You send stems back and forth, they don't line up, you have conflicted copies everywhere, someone's using Logic and someone else is on Ableton, and it's just a mess. I wanted to fix that.</p>
             <p>The concept was simple: a plug-in that works in any DAW and handles the transfer of audio and midi files automatically. No more manual exports. No more trying to figure out which version is the latest. No more headaches trying to line up stems that were recorded on different systems. Just install the plug-in, connect with your collaborator, and start making music.</p>
             <p>I built it out, got it working, but then life happened and it sat there. Not quite finished, not quite polished, but functional. It was one of those projects that I always meant to come back to but never quite did.</p>
             <h2>Dusting It Off</h2>
@@ -64,7 +67,7 @@
             <p>The plug-in works with nearly any DAW you can think of. It handles both audio and midi. It's designed to make asynchronous collaboration seamless—you can work on your parts whenever you want, push them up, and your collaborator gets them automatically synced in their project. No coordinating schedules, no complicated file management.</p>
             <h2>Why Open Source</h2>
             <p>Making Auxlee open source feels right for a few reasons. First, the music production community is full of incredibly talented developers and producers who could make this better than I ever could alone. Second, trust matters when you're dealing with people's creative work—open source means anyone can audit the code, understand what it's doing, and contribute improvements. Third, I've moved on to other projects and don't have the bandwidth to turn this into a commercial product, but I still think the idea is sound and could help people.</p>
-            <p>The code is now available in a monorepo (frontend web, API, and Juce plugin code) on <a href="https://github.com/auxlee/auxlee-monorepo">GitHub</a>, and the service is free to use at <a href="https://auxlee.com">auxlee.com</a>. If you're a musician who collaborates remotely, or a developer interested in audio tools, check it out. If nothing else, maybe it'll save someone the headache of dealing with misaligned stems.</p>
+            <p>The code is now available in a monorepo (frontend web, API, and Juce plugin code) on <a href="https://github.com/auxlee/auxlee-monorepo" rel="noopener noreferrer" target="_blank">GitHub</a>, and the service is free to use at <a href="https://auxlee.com" rel="noopener noreferrer" target="_blank">auxlee.com</a>. If you're a musician who collaborates remotely, or a developer interested in audio tools, check it out. If nothing else, maybe it'll save someone the headache of dealing with misaligned stems.</p>
             <p>It never went anywhere as a startup, but maybe as an open source project it'll find the life it was supposed to have.</p>
           </div>
         </article>

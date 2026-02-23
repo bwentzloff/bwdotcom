@@ -13,7 +13,8 @@
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Post - Brian Wentzloff dot com</title>
+    <meta name="description" content="Grind City Coffee Xpo Throwdown - A web app for a Memphis coffee competition with QR code voting and live results display.">
+    <title>Grind City Coffee Xpo - Brian Wentzloff dot com</title>
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
@@ -22,15 +23,17 @@
 
   <body>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
-      <nav class="container-fluid">
+      <nav class="container-fluid" aria-label="Main navigation">
         <ul>
-          <li><strong class="primary"><a href="/"><img width="100" src="/img/giffordlakelabslogo-black.png"></a></strong></li>
+          <li><strong class="primary"><a href="/"><img width="100" src="/img/giffordlakelabslogo-black.png" alt="Gifford Lake Labs logo - Home"></a></strong></li>
         </ul>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="https://github.com/bwentzloff">GitHub</a></li>
+          <li><a href="https://github.com/bwentzloff" rel="noopener noreferrer" target="_blank" aria-label="GitHub (opens in new tab)">GitHub</a></li>
         </ul>
       </nav>
     </header>
@@ -47,13 +50,13 @@
         </nav>
       </aside>
 
-      <main>
+      <main id="main-content">
         <article>
           <h1 id="title">Grind City Coffee Xpo Throwdown</h1>
-          <p><small>Published on <time datetime="">Feb 1 2026</time></small></p>
+          <p><small>Published on <time datetime="2026-02-01">Feb 1 2026</time></small></p>
           
           <div id="content">
-            <p>In 2024, I whipped up a quick web app to support a local coffee competition in Memphis. Users could scan a QR code on their phone and vote in each head-to-head showdown in the single elimination bracket competition. Results were displayed on a screen in real time as voting happened on a TV in the front. It was lots of fun and I'm looking forward to doing it again this year! Check out the Grind City Coffee Xpo. I love this thing. My buddy Daniel started it a few years ago with an idea and a passion. Now there are people from all over to come to this event. It's fantastic. I highly recommend everyone in Western Tennessee to <a href="https://www.grindcitycoffee.com/">check it out on March 14, 2026.</a></p>
+            <p>In 2024, I whipped up a quick web app to support a local coffee competition in Memphis. Users could scan a QR code on their phone and vote in each head-to-head showdown in the single elimination bracket competition. Results were displayed on a screen in real time as voting happened on a TV in the front. It was lots of fun and I'm looking forward to doing it again this year! Check out the Grind City Coffee Xpo. I love this thing. My buddy Daniel started it a few years ago with an idea and a passion. Now there are people from all over to come to this event. It's fantastic. I highly recommend everyone in Western Tennessee to <a href="https://www.grindcitycoffee.com/" rel="noopener noreferrer" target="_blank">check it out on March 14, 2026.</a></p>
           </div>
         </article>
       </main>
