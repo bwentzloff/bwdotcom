@@ -18,13 +18,19 @@
     <style>
       /* Critical CSS - inline to prevent layout shift */
       :root{--primary:#d54d4d;--primary-hover:#b93d3d;--background-color:#f8fafb;--color:#222;--h1-color:#d54d4d;--terminal-header-bg:#eaeaea;--terminal-border:#bfa76a;--terminal-shadow:0 2px 16px 0 rgba(0,0,0,0.04);--terminal-font:'Fira Mono','Consolas','Menlo','Monaco',monospace}
-      body{background-color:var(--background-color)!important;color:var(--color)!important;font-family:var(--terminal-font);margin:0}
+      *{box-sizing:border-box}
+      body{background-color:var(--background-color)!important;color:var(--color)!important;font-family:var(--terminal-font);margin:0;line-height:1.6}
       header{background:var(--terminal-header-bg)!important;border-bottom:2px solid var(--terminal-border);box-shadow:var(--terminal-shadow)}
-      header nav ul{list-style:none;margin:0;padding:0}
+      header nav{display:flex;justify-content:space-between;align-items:center}
+      header nav ul{display:flex;list-style:none;margin:0;padding:0;gap:1rem}
+      header nav li{margin:0}
       img{display:block;max-width:100%;height:auto}
+      h1,h2,h3,h4,h5,h6{color:var(--h1-color)!important;font-family:var(--terminal-font)}
+      a{color:var(--primary);text-decoration:underline dotted}
+      p,.primary{color:var(--color)!important;line-height:1.6}
       .layout{display:flex;justify-content:center;margin-top:2rem;gap:2rem}
-      aside{display:none;min-width:200px}
-      main{background:#fff;border:2px solid var(--terminal-border);border-radius:8px;box-shadow:var(--terminal-shadow);padding:2rem;max-width:900px;width:100%}
+      aside{display:none!important}
+      main{background:#fff;border:2px solid var(--terminal-border);border-radius:8px;box-shadow:var(--terminal-shadow);padding:2rem;max-width:900px;width:100%;font-family:var(--terminal-font)}
       article{background:rgba(255,255,255,0.6)}
       .skip-link{position:absolute;top:-40px;left:0;background:var(--primary);color:#fff;padding:8px;text-decoration:none;z-index:100}
       .skip-link:focus{top:0}
