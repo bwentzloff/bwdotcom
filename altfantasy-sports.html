@@ -17,8 +17,12 @@
     <title>AltFantasy Sports - Brian Wentzloff dot com</title>
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
+      <link rel="stylesheet" href="styles.css">
+    </noscript>
   </head>
 
   <body>
