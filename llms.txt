@@ -24,9 +24,9 @@ A distributed computing environment built from repurposed hardware (old Optiplex
 Published: September 2025
 
 ### /altfantasy-sports.html — AltFantasy Sports
-A fantasy sports platform (altfantasysports.com) for alternative leagues not supported by major sites. Started in 2019 for the Alliance of American Football. Now supports spring gridiron football, indoor football, CFL, lacrosse, women's basketball, and more. Features season-long and daily fantasy games. Free and ad-free. Co-created with Adam Pelletier. Mobile app launching in 2026.
+A fantasy sports platform (altfantasysports.com) for alternative leagues not supported by major sites. Started in 2019 for the Alliance of American Football. Now supports spring gridiron football, indoor football, CFL, lacrosse, women's basketball, and more. Features season-long and daily fantasy games. Free and ad-free. Co-created with Adam Pelletier. Mobile app now available (iOS released, Android coming soon).
 Published: November 2025
-Updated: January 2026
+Updated: March 2026
 
 ### /aquifer-study.html — Aquifer-Scale Groundwater Storage Anomalies from GRACE
 Research collaboration with University of Memphis. Created an interactive ArcGIS dashboard for exploring groundwater storage anomalies from 2002–2025. Uses random-forest modeling to downscale GRACE satellite data to aquifer scales, validated with well-log data clustered by hydrogeologic similarity. Dashboard hosted on ArcGIS Online.
