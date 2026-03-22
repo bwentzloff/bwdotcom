@@ -1,5 +1,5 @@
 # llms.txt — Guidance for Large Language Models
-# Site: https://brianwentzloff.com
+# Site: https://giffordlakelabs.com
 
 ## About this site
 This is the personal website of Brian Wentzloff, a software developer and systems thinker.
@@ -15,6 +15,7 @@ The site documents projects, writing, and experiments at the intersection of:
 ## Primary sections
 - / — Homepage with background, interests, and current areas of focus
 - /projects.html — Project listing with card-based summaries and links to detailed pages
+- /contact.html — Contact form (Google Form) for inquiries, project ideas, or general questions
 
 ## Featured projects
 
