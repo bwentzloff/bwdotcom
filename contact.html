@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
   <head>
-    <link rel="icon" type="image/png" href="img/giffordlakelabslogo-black.png">
+<link rel="icon" type="image/png" href="img/giffordlakelabslogo-black.png">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG5799C4V6"></script>
     <script>
@@ -15,35 +15,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Contact Brian Wentzloff - Get in touch for software development, web projects, or collaboration opportunities.">
     <title>Contact - Brian Wentzloff</title>
-    <style>
-:root{--primary:#d54d4d;--primary-hover:#b93d3d;--primary-focus:#d54d4d33;--primary-inverse:#fff;--background-color:#f8fafb;--muted-border-color:#d6b97b;--color:#222;--h1-color:#d54d4d;--h2-color:#d54d4d;--h3-color:#d54d4d;--h4-color:#d54d4d;--h5-color:#d54d4d;--h6-color:#d54d4d;--terminal-header-bg:#eaeaea;--terminal-border:#bfa76a;--terminal-shadow:0 2px 16px 0 rgba(0,0,0,0.04);--terminal-font:'Fira Mono','Consolas','Menlo','Monaco',monospace}.skip-link{position:absolute;top:-50px;left:0;background:var(--primary);color:white;padding:8px;text-decoration:none;z-index:100}.skip-link:focus{top:0}body{background-color:var(--background-color)!important;color:var(--color)!important;font-family:var(--terminal-font)}header{background:var(--terminal-header-bg)!important;border-bottom:2px solid var(--terminal-border);font-family:var(--terminal-font);box-shadow:var(--terminal-shadow)}.layout{display:flex;justify-content:center;margin-top:2rem}main{background:#fff;border:2px solid var(--terminal-border);border-radius:8px;box-shadow:var(--terminal-shadow);padding:2rem;max-width:900px;width:100%;font-family:var(--terminal-font)}aside{display:none}h1,h2,h3,h4,h5,h6{color:var(--h1-color)!important;font-family:var(--terminal-font)}a,a:visited{color:var(--primary);text-decoration:underline dotted}a:hover,a:focus{color:var(--primary-hover)}.corner-img{display:none}p,.primary{color:var(--color)!important;line-height:1.6}article{background:rgba(255,255,255,0.6)}.google-form-container{width:100%;margin-top:1.5rem}.google-form-container iframe{width:100%;min-height:600px;border:none;border-radius:4px}@media(max-width:768px){.layout{margin-top:1rem;padding:0}main{padding:1rem}.google-form-container iframe{min-height:700px}}
-    </style>
+    
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+      
+    <script defer src="theme-switcher.js"></script>
   </head>
 
   <body>
-
     <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <header>
-      <nav class="container-fluid" aria-label="Main navigation">
-        <ul>
-          <li><strong class="primary"><a href="/"><img width="100" height="57" src="/img/giffordlakelabslogo-black.png" alt="Gifford Lake Labs logo - Home"></a></strong></li>
-        </ul>
-        <ul>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://github.com/bwentzloff" rel="noopener noreferrer" target="_blank" aria-label="GitHub (opens in new tab)">GitHub</a></li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="site-brand" href="index.html">Gifford Lake Labs dot com</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a class="site-nav-link" href="index.html">Home</a>
+          <a class="site-nav-link" href="projects.html">Projects</a>
+          <a class="site-nav-link is-active" href="contact.html">Contact</a>
+          <a class="site-nav-link" href="https://github.com/bwentzloff" rel="noopener noreferrer" target="_blank">GitHub</a>
+        </nav>
+        <div class="site-tools">
+          <button class="theme-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Select color theme">◑</button>
+        </div>
+      </div>
+      <p class="site-kicker">PROJECTS, ARCHIVES, BUILD NOTES</p>
     </header>
 
-    <div class="layout">
-
-      <main id="main-content">
-        <h1>Contact</h1>
+    <div class="site-shell">
+      <main id="main-content" class="site-main">
+        <article class="site-article">
+<h1>Contact</h1>
         <p>Have a question, project idea, or just want to say hello? Fill out the form below and I'll get back to you.</p>
         
         <div class="google-form-container">
@@ -56,8 +57,8 @@
             Loading…
           </iframe>
         </div>
+        </article>
       </main>
-
     </div>
   </body>
 </html>
