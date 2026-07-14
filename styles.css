@@ -67,8 +67,6 @@ body {
   color: var(--text);
   line-height: 1.7;
   background:
-    radial-gradient(1100px 720px at 0% 0%, var(--bg-grad-a), transparent 52%),
-    radial-gradient(1080px 670px at 100% 5%, var(--bg-grad-b), transparent 54%),
     var(--bg);
 }
 
